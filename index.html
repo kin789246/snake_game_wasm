@@ -8,18 +8,12 @@
     </head>
 
     <body style="margin: 0px;">
-      <script type="module">
-        import init from './snake_bevy.js'
-
-        init().catch((error) => {
-          if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-            throw error;
-          }
-        });
-      </script>
-    移動：方向鍵 / WSAD / KJHL <br>
-    暫停：空白鍵 / ESC <br>
-    確認：空白鍵 / ENTER <br>
+      <iframe id="snake_game-iframe" 
+        style="display:block;margin:auto;width:90vw;height:90vh;"
+        src="wasm/index.html"></iframe>
+      移動：方向鍵 / WSAD / KJHL <br>
+      暫停：空白鍵 / ESC <br>
+      確認：空白鍵 / ENTER <br>
     </body>
 
 </html>
